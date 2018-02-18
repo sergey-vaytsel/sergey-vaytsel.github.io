@@ -1,0 +1,29 @@
+{
+    "socials": [
+        {
+            "name": "mail",
+            "short_name": "@",
+            "value": "sergey.vaytsel@gmail.com"
+        },
+        {
+            "name": "linkedin",
+            "short_name": "li",
+            "value": "https://www.linkedin.com/in/s-vaytsel"
+        },
+        {
+            "name": "vk",
+            "short_name": "vk",
+            "value": "https://vk.com/vaytsel_sa"
+        },
+        {
+            "name": "facebook",
+            "short_name": "fb",
+            "value": "https://www.facebook.com/sergey.vaytsel/"
+        },
+        {
+            "name": "github",
+            "short_name": "gh",
+            "value": "https://github.com/sergey-vaytsel"
+        }
+    ]
+}
