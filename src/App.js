@@ -40,7 +40,12 @@ class Socials extends React.Component {
 
   render() {
     return this.data.map(info => {
-      return <a className="contact" id={info.name} href={info.link} title={info.name}><b>{info.short_name}</b></a>;
+      return <a
+          className="contact"
+          id={info.name}
+          href={info.link}
+          title={info.name}
+        ><b>{info.short_name}</b></a>;
     });
   }
 }
@@ -49,8 +54,19 @@ function App() {
   const intro = "I'm Sergey Vaytsel, a programmer.";
   const dgis_link = "https://dev.2gis.ru/mobile-sdk";
   const profile = [
-    <p>Currently I am the 3D Map Team Lead at <b><a id="dgis" href={dgis_link}>2GIS</a></b>.</p>,
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+      Currently I am the &ldquo;3D Map&rdquo; Team Lead
+      at <b><a id="dgis" href={dgis_link}>2GIS</a></b>.
+    </p>,
+    <p>
+      In different stages of life, I was fond of origami,
+      basketball, Japan culture, playing guitar, computer games, mathematics,
+      programming, testing, design, typography, writing and investments.
+    </p>,
+    <p>
+      To contact me you can use contacts below.<br/>
+      Now I live in St.&nbsp;Petersburg.
+    </p>
   ];
   return (
     <div className="App container">
@@ -61,7 +77,7 @@ function App() {
       </div>
       <div className="row profile">
         <div className="column">
-          {profile.map(paragraph => { return paragraph; })}
+          {profile}
         </div>
       </div>
       <div className="row contacts">
