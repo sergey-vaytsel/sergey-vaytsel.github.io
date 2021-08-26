@@ -19,15 +19,34 @@
   line-height: 34px;
 }
 
-a:visited {
-  color: #428bca;
+.contact {
+  margin-right: 1em;
 }
 
-a.2gis {
-  color: #299400;
+#dgis {
+  color: #52b311;
 }
 
-a.2gis:hover,
-a.2gis:focus {
-  color: #299400;
+#facebook {
+  color: #0075ee;
+}
+
+#instagram {
+  color: #517fa4;
+}
+
+#mail {
+  color: #d44638;
+}
+
+#linkedin {
+  color: #007bb6;
+}
+
+#github {
+  color: #f4cbb2;
+}
+
+#goodreads {
+  color: #b7ad98;
 }
