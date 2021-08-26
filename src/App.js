@@ -23,17 +23,17 @@ class Socials extends React.Component {
       {
         name: "instagram",
         short_name: "instgrm",
-        link: "https://www.instagram.com/vaytselsergey"
+        link: "https://www.instagram.com/sergey_vaytsel"
       },
       {
         name: "goodreads",
         short_name: "gdrds",
-        link: "https://www.goodreads.com/user/show/88544319-sergey-vaytsel"
+        link: "https://www.goodreads.com/sergey_vaytsel"
       },
       {
         name: "facebook",
         short_name: "fcbk",
-        link: "https://www.facebook.com/sergey.vaytsel/"
+        link: "https://www.facebook.com/sergey.vaytsel"
       }
     ];
   }
