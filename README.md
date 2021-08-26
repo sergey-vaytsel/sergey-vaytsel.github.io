@@ -17,3 +17,7 @@ You will also see any lint errors in the console.
 ### `npm run deploy`
 
 Publish project to https://sergey-vaytsel.github.io page.
+
+## Thanks
+
+Thanks to [Todd Coleman](https://toddcoleman.com) for a great inspiration.
