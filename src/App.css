@@ -2,8 +2,12 @@
   max-width: 760px;
 }
 
+.logo-svg {
+  background: white;
+}
+
 .intro {
-  padding: 2em 0 1em 0;
+  padding: 1em 0 1em 0;
   font-style: normal;
   font-weight: 800;
   font-size: 38px;
@@ -20,7 +24,8 @@
 }
 
 .contact {
-  margin-right: 1em;
+  margin-right: 0.5em;
+  font-weight: 600;
 }
 
 #dgis {
@@ -28,11 +33,20 @@
 }
 
 #facebook {
-  color: #0075ee;
+  color: #1877f2;
 }
 
 #instagram {
-  color: #517fa4;
+  background: radial-gradient(
+    circle at 23% 100%,
+    #fed373 30%,
+    #f15245 42%,
+    #d92e7f 48%,
+    #9b36b7 55%,
+    #515ecf
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #mail {
@@ -44,9 +58,13 @@
 }
 
 #github {
-  color: #f4cbb2;
+  color: #fafafa;
 }
 
 #goodreads {
   color: #b7ad98;
+}
+
+.goodreads-good {
+  font-weight: 100;
 }
