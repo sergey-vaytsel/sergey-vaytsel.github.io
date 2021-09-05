@@ -61,9 +61,7 @@ class ParticlesBackground extends Component {
       },
       fpsLimit: 30,
       particles: {
-        color: {
-          value: "#ffffff",
-        },
+        color: { value: "#ffffff" },
         links: {
           color: "#ffffff",
           distance: 100,
@@ -74,13 +72,7 @@ class ParticlesBackground extends Component {
         rotate: {
           random: true,
           direction: "random",
-          animation: {
-            enable: true,
-            speed: 3
-          }
-        },
-        collisions: {
-          enable: false,
+          animation: { enable: true, speed: 3 }
         },
         move: {
           direction: "none",
@@ -91,22 +83,12 @@ class ParticlesBackground extends Component {
           straight: true,
         },
         number: {
-          density: {
-            enable: true,
-            value_area: 800,
-          },
+          density: { enable: true, value_area: 800 },
           value: 80,
         },
-        opacity: {
-          value: 0.25,
-        },
-        shape: {
-          type: "triangle",
-        },
-        size: {
-          random: true,
-          value: 3,
-        },
+        opacity: { value: 0.25 },
+        shape: { type: "triangle" },
+        size: { random: true, value: 3 },
       },
       detectRetina: true,
     };
