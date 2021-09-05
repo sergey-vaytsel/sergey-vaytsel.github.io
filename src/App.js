@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { ReactComponent as Logo } from './img.svg';
+import Particles from 'react-tsparticles';
 
 class Socials extends React.Component {
   constructor(props) {
@@ -51,6 +52,76 @@ class Socials extends React.Component {
   }
 }
 
+class ParticlesBackground extends Component {
+  constructor(props) {
+    super(props);
+    this.options = {
+      background: {
+        color: { value: "#00000000" },
+      },
+      fpsLimit: 30,
+      particles: {
+        color: {
+          value: "#ffffff",
+        },
+        links: {
+          color: "#ffffff",
+          distance: 100,
+          enable: true,
+          opacity: 0.2,
+          width: 0.5,
+        },
+        rotate: {
+          random: true,
+          direction: "random",
+          animation: {
+            enable: true,
+            speed: 3
+          }
+        },
+        collisions: {
+          enable: false,
+        },
+        move: {
+          direction: "none",
+          enable: true,
+          outMode: "bounce",
+          random: true,
+          speed: 0.35,
+          straight: true,
+        },
+        number: {
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+          value: 80,
+        },
+        opacity: {
+          value: 0.25,
+        },
+        shape: {
+          type: "triangle",
+        },
+        size: {
+          random: true,
+          value: 3,
+        },
+      },
+      detectRetina: true,
+    };
+  }
+
+  render() {
+    return (
+      <Particles
+        id="particles-background"
+        options={this.options}
+      />
+    );
+  }
+}
+
 function App() {
   const intro = "I'm Sergey Vaytsel, a programmer.";
   const dgis_link = "https://dev.2gis.ru/mobile-sdk";
@@ -63,32 +134,35 @@ function App() {
       In different stages of life, I was fond of origami,
       basketball, Japan culture, playing guitar, computer games, mathematics,
       programming, testing, design, typography, writing and investments.
+      Now I focused on management, programming, design and writing.
     </p>,
     <p key="3">
-      To contact me you can use contacts below.<br/>
       Now I live in St.&nbsp;Petersburg.
     </p>
   ];
   return (
-    <div className="App container">
-      <div className="row logo">
-        <div className="column">
-          <Logo className="logo-svg" />
+    <div>
+      <ParticlesBackground className="particles-bg"></ParticlesBackground>
+      <div className="App container">
+        <div className="row logo">
+          <div className="column">
+            <Logo className="logo-svg" />
+          </div>
         </div>
-      </div>
-      <div className="row intro">
-        <div className="column">
-          {intro}
+        <div className="row intro">
+          <div className="column">
+            {intro}
+          </div>
         </div>
-      </div>
-      <div className="row profile">
-        <div className="column">
-          {profile}
+        <div className="row profile">
+          <div className="column">
+            {profile}
+          </div>
         </div>
-      </div>
-      <div className="row contacts">
-        <div className="column">
-          <Socials></Socials>
+        <div className="row contacts">
+          <div className="column">
+            <Socials></Socials>
+          </div>
         </div>
       </div>
     </div>
