@@ -119,7 +119,7 @@ function App() {
       Now I focused on management, programming, design and writing.
     </p>,
     <p key="3">
-      Now I live in St.&nbsp;Petersburg.
+      Now I live in Novosibirsk.
     </p>
   ];
   return (
