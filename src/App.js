@@ -8,9 +8,14 @@ class Socials extends React.Component {
     super(props);
     this.data = [
       {
-        name: "mail",
+        name: "gmail",
         short_name: <span>@</span>,
         link: "mailto:sergey.vaytsel@gmail.com"
+      },
+      {
+        name: "ymail",
+        short_name: <span>@</span>,
+        link: "mailto:s.vaytsel@yandex.ru"
       },
       {
         name: "linkedin",
@@ -23,19 +28,9 @@ class Socials extends React.Component {
         link: "https://github.com/sergey-vaytsel"
       },
       {
-        name: "instagram",
-        short_name: <span>instgrm</span>,
-        link: "https://www.instagram.com/sergey_vaytsel"
-      },
-      {
         name: "goodreads",
         short_name: <span><span className="goodreads-good">gd</span>rds</span>,
         link: "https://www.goodreads.com/sergey_vaytsel"
-      },
-      {
-        name: "facebook",
-        short_name: <span>fcbk</span>,
-        link: "https://www.facebook.com/sergey.vaytsel"
       }
     ];
   }

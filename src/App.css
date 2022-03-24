@@ -42,25 +42,12 @@
   color: #52b311;
 }
 
-#facebook {
-  color: #1877f2;
-}
-
-#instagram {
-  background: radial-gradient(
-    circle at 23% 100%,
-    #fed373 30%,
-    #f15245 42%,
-    #d92e7f 48%,
-    #9b36b7 55%,
-    #515ecf
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#mail {
+#gmail {
   color: #d44638;
+}
+
+#ymail {
+  color: #FFCC00;
 }
 
 #linkedin {
